@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #85C1E9;
+}
+
+.titulo {
+    font-family: "Press Start 2P", system-ui;
+    padding-bottom: 3rem;
+    font-size: 1.5rem;
+    color: #fff;
+    letter-spacing: .3rem;
+    text-align: center;
+}
+
+.tecla {
+    border: none;
+    font-size: 1.5rem;
+    font-family: "Press Start 2P", system-ui;
+    border: 1px solid #ccc;
+    background-color: #FDFEFE;
+    transition: background-color 0.1s, transform 0.1s;
+}
+
+.tecla:hover{
+    background-color: #F0F3F4;
+}
+
+.tecla:active {
+    transform: scale(0.98);
+}
+
+.operador {
+    background-color: #e1e5e6;
+}
+
+.operador:hover {
+    background-color: #BDC3C7;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.calculadora {
+    width: 30%;
+    height: 60vh;
+    border-radius: 10px;
+    background-color: #283747;
+    display: grid;
+    grid-template-rows: repeat(6, 16.667%);
+    grid-template-columns: repeat(4, 25%);
+    z-index: 100;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+
+
+.pantalla {
+    grid-row: 1/2;
+    grid-column: 1/5;
+    padding-right: 2rem;
+    color: #fff;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 1.5rem;
+    text-align: end;
+    align-self: center;
+}
+
+.igual {
+    grid-row: 3/7;
+    grid-column: 4/5;
+    border-bottom-right-radius: 10px;
+    background-color: #CB4335;
+    border: none;
+}
+
+.igual:hover {
+    background-color: #C0392B;
+}
+
+.igual:active {
+    transform: scale(0.99);
+}
+
+.cero {
+    border-bottom-left-radius: 10px;
+}
